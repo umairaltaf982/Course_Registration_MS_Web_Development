@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="/public/css/admin/admin-add-stud.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Sidebar Placeholder -->
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <header>
+            <h2>Add New Student</h2>
+        </header>
+
+        <div class="add-student-form">
+            <label for="roll-number">Roll Number:</label>
+            <input type="text" id="roll-number" placeholder="22F-XXXX" required>
+
+            <label for="student-name">Full Name:</label>
+            <input type="text" id="student-name" placeholder="Enter Student Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Student Email" required>
+
+            <button id="add-student-btn">Add Student</button>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="/public/js/admin/admin-sidebar.js"></script> <!-- Loads the sidebar -->
+    <script src="/public/js/admin/admin-add-stud.js"></script> <!-- Handles student addition -->
+</body>
+</html>

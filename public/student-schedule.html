@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Schedule</title>
+    <link rel="stylesheet" href="/public/css/student/student-schedule.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Sidebar Placeholder -->
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <header>
+            <h2>Weekly Schedule</h2>
+        </header>
+
+        <div class="schedule-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody id="schedule-body">
+                    <!-- Schedule will be dynamically loaded -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/public/js/student/student-sidebar.js"></script> <!-- Loads the sidebar -->
+    <script src="/public/js/student/student-schedule.js"></script> <!-- Loads weekly schedule -->
+</body>
+</html>

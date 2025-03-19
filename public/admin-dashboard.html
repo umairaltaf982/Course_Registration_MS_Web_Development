@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/public/css/admin/admin-dashboard.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Sidebar Placeholder -->
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <header>
+            <h2>Welcome, <span id="admin-name">Admin</span></h2>
+        </header>
+
+        <div class="info-cards">
+            <div class="card">
+                <h3>Total Students</h3>
+                <p id="total-students">120</p>
+            </div>
+            <div class="card">
+                <h3>Total Courses</h3>
+                <p id="total-courses">15</p>
+            </div>
+            <div class="card">
+                <h3>Available Seats</h3>
+                <p id="available-seats">250</p>
+            </div>
+        </div>
+
+        <div class="admin-actions">
+            <h3>Quick Actions</h3>
+            <button onclick="location.href='/public/admin-manage-stud.html'">Manage Students</button>
+            <button onclick="location.href='/public/admin-manage-courses.html'">Manage Courses</button>
+        </div>
+    </div>
+
+    <script src="/public/js/admin/admin-sidebar.js"></script> <!-- Loads the sidebar -->
+    <script src="/public/js/admin/admin-dashboard.js"></script> <!-- Loads admin data -->
+</body>
+</html>

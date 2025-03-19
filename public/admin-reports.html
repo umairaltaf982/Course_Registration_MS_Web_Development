@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="/public/css/admin/admin-reports.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Sidebar Placeholder -->
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <header>
+            <h2>Admin Reports</h2>
+        </header>
+
+        <div class="report-options">
+            <button onclick="generateStudentReport()">Students per Course</button>
+            <button onclick="generateAvailableSeatsReport()">Courses with Available Seats</button>
+            <button onclick="generatePrerequisiteReport()">Students Missing Prerequisites</button>
+        </div>
+
+        <div class="report-output">
+            <h3>Report Output</h3>
+            <table id="report-table">
+                <thead>
+                    <tr id="report-header">
+                        <!-- Dynamic Headers -->
+                    </tr>
+                </thead>
+                <tbody id="report-body">
+                    <!-- Report data will be dynamically loaded -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/public/js/admin/admin-sidebar.js"></script> <!-- Loads the sidebar -->
+    <script src="/public/js/admin/admin-reports.js"></script> <!-- Handles reports -->
+</body>
+</html>

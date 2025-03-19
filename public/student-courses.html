@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <link rel="stylesheet" href="/public/css/student/student-courses.css">
+</head>
+<body>
+    <!-- Sidebar Placeholder -->
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <header>
+            <h2>My Courses</h2>
+        </header>
+
+        <div class="course-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credit Hours</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+                <tbody id="course-table">
+                    <!-- Courses will be dynamically loaded here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/public/js/student/student-sidebar.js"></script>
+    <script src="/public/js/student/student-courses.js"></script>
+</body>
+</html>

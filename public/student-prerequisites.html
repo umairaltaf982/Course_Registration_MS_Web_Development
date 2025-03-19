@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Prerequisites</title>
+    <link rel="stylesheet" href="/public/css/student/student-prerequisites.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Sidebar Placeholder -->
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <header>
+            <h2>Course Prerequisites</h2>
+        </header>
+
+        <div class="prerequisites-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Prerequisites</th>
+                    </tr>
+                </thead>
+                <tbody id="prerequisites-table">
+                    <!-- Prerequisites will be dynamically loaded -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/public/js/student/student-sidebar.js"></script> <!-- Loads the sidebar -->
+    <script src="/public/js/student/student-prerequisites.js"></script> <!-- Loads prerequisites -->
+</body>
+</html>

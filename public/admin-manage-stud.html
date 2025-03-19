@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Students</title>
+    <link rel="stylesheet" href="/public/css/admin/admin-manage-stud.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Sidebar Placeholder -->
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <header>
+            <h2>Manage Students</h2>
+        </header>
+
+        <div class="student-actions">
+            <button id="add-student-btn"><a href="/public/admin-add-stud.html" style="color: rgb(0, 0, 0); text-decoration: none;">Add Student</a></button>
+        </div>
+
+        <div class="student-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll Number</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="student-table">
+                    <!-- Student data will be dynamically loaded -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/public/js/admin/admin-sidebar.js"></script> <!-- Loads the sidebar -->
+    <script src="/public/js/admin/admin-manage-stud.js"></script> <!-- Manages students -->
+</body>
+</html>
